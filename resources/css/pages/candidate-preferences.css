@@ -1,0 +1,115 @@
+.preferences-page {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.preferences-heading {
+    margin-bottom: 25px;
+}
+
+.preferences-heading h1 {
+    margin: 0;
+    color: #1c304b;
+    font-size: 31px;
+    font-weight: 700;
+    letter-spacing: -0.8px;
+}
+
+.preferences-heading p {
+    margin: 2px 0 0;
+    color: var(--hb-muted);
+}
+
+.preferences-saved-alert {
+    display: grid;
+    gap: 3px;
+    margin-bottom: 24px;
+    padding: 17px 16px;
+    border-radius: 4px;
+    background: #edf8f1;
+    color: #263a31;
+}
+
+.preferences-saved-alert span {
+    font-weight: 600;
+}
+
+.preference-card h2 {
+    margin-bottom: 18px;
+}
+
+.profile-field select {
+    width: 100%;
+    padding: 0 22px 0 0;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--hb-text);
+    font-weight: 600;
+}
+
+.salary-field > div {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.salary-field select {
+    width: 56px;
+    flex: 0 0 56px;
+    padding-right: 4px;
+}
+
+.salary-field input {
+    width: 112px;
+    flex: 0 1 112px;
+}
+
+.salary-field b {
+    white-space: nowrap;
+}
+
+.preference-checks .profile-check,
+.preference-card > .profile-check {
+    margin-bottom: 14px;
+}
+
+.notification-note {
+    margin: 8px 0 0;
+    color: #8290a1;
+    font-size: 12px;
+}
+
+.preferences-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-top: 16px;
+}
+
+.unsaved-indicator {
+    display: none;
+    color: #9b6819;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.preferences-actions.is-dirty .unsaved-indicator {
+    display: inline;
+}
+
+.saved-search-card p {
+    margin-bottom: 26px;
+    line-height: 1.55;
+}
+
+@media (max-width: 575.98px) {
+    .preferences-heading h1 {
+        font-size: 27px;
+    }
+
+    .preferences-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+}
